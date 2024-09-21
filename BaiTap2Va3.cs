@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DemoConsole
+namespace BaiTap2Va3
 {
     internal class Program
     {
