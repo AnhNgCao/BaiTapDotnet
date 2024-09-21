@@ -12,3 +12,4 @@ D:\DotNet\DemoConsole\obj\Debug\net8.0\refint\DemoConsole.dll
 D:\DotNet\DemoConsole\obj\Debug\net8.0\DemoConsole.pdb
 D:\DotNet\DemoConsole\obj\Debug\net8.0\DemoConsole.genruntimeconfig.cache
 D:\DotNet\DemoConsole\obj\Debug\net8.0\ref\DemoConsole.dll
+D:\DotNet\DemoConsole\obj\Debug\net8.0\DemoConsole.sourcelink.json
