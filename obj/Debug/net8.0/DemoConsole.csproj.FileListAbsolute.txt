@@ -1,0 +1,14 @@
+D:\DotNet\DemoConsole\bin\Debug\net8.0\DemoConsole.exe
+D:\DotNet\DemoConsole\bin\Debug\net8.0\DemoConsole.deps.json
+D:\DotNet\DemoConsole\bin\Debug\net8.0\DemoConsole.runtimeconfig.json
+D:\DotNet\DemoConsole\bin\Debug\net8.0\DemoConsole.dll
+D:\DotNet\DemoConsole\bin\Debug\net8.0\DemoConsole.pdb
+D:\DotNet\DemoConsole\obj\Debug\net8.0\DemoConsole.GeneratedMSBuildEditorConfig.editorconfig
+D:\DotNet\DemoConsole\obj\Debug\net8.0\DemoConsole.AssemblyInfoInputs.cache
+D:\DotNet\DemoConsole\obj\Debug\net8.0\DemoConsole.AssemblyInfo.cs
+D:\DotNet\DemoConsole\obj\Debug\net8.0\DemoConsole.csproj.CoreCompileInputs.cache
+D:\DotNet\DemoConsole\obj\Debug\net8.0\DemoConsole.dll
+D:\DotNet\DemoConsole\obj\Debug\net8.0\refint\DemoConsole.dll
+D:\DotNet\DemoConsole\obj\Debug\net8.0\DemoConsole.pdb
+D:\DotNet\DemoConsole\obj\Debug\net8.0\DemoConsole.genruntimeconfig.cache
+D:\DotNet\DemoConsole\obj\Debug\net8.0\ref\DemoConsole.dll
