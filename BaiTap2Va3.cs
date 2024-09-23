@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace BaiTap2Va3
 {
@@ -34,6 +35,9 @@ namespace BaiTap2Va3
             // Console.WriteLine($"Divine: a / b = {div}");
             // Console.ReadKey();
 
+
+            //------------------------------------------------------------------
+
             // //Bai 2
             // Console.WriteLine("Enter two sides of a rectangle (seperated by space): ");
 
@@ -56,6 +60,8 @@ namespace BaiTap2Va3
             // Console.WriteLine($"Area: a * b = {S}");
             // Console.WriteLine($"Circumference: (a + b) * 2 = {C}");
             // Console.ReadKey();
+            
+            //------------------------------------------------------------------
 
             // //Bai 3
             // Console.WriteLine("Enter the radius of the circle: ");
@@ -74,6 +80,9 @@ namespace BaiTap2Va3
             // Console.WriteLine($"Area: radius * 3.14 = {S}");
             // Console.WriteLine($"Circumference: radius * 2 * 3.14 = {C}");
             // Console.ReadKey();
+            
+            //------------------------------------------------------------------
+
 
             // Bai 4
             // Console.WriteLine("Enter student's name: ");
@@ -103,6 +112,9 @@ namespace BaiTap2Va3
             // //Print results
             // Console.WriteLine($"Whole year GPA: {wholeYearGPA}");
             // Console.ReadKey();
+            
+            //------------------------------------------------------------------
+
 
             // // Bai 5
             // Console.WriteLine("Enter fisrt employee's name: ");
@@ -144,35 +156,167 @@ namespace BaiTap2Va3
             // Console.WriteLine($"Second employee's name: {name2}, gender: {gender2}, date of birth: {dob2}, salary cofficient: {salaryCoefficient2}, base salary: {baseSalary2}, working year: {workingYear2}, Allowance: {allowance2}");
 
             // Console.ReadKey();
-
-            //Bai 6
-
-            //Read the date
-            Console.WriteLine("Enter the desired day: ");
-            int day = int.Parse(Console.ReadLine() ?? "0");
-
-            Console.WriteLine("Enter the desired month: ");
-            int month = int.Parse(Console.ReadLine() ?? "0");
-
-            Console.WriteLine("Enter the desired year: ");
-            int year = int.Parse(Console.ReadLine() ?? "0");
+            
+            //------------------------------------------------------------------
 
 
-            //Create a DateTime object
-            DateTime currentDate = new DateTime(year, month, day);
+            // //Bai 6
 
-            //Calculation
-            DateTime yesterday = currentDate.AddDays(-1);
-            DateTime tomorrow = currentDate.AddDays(1);
+            // //Read the date
+            // Console.WriteLine("Enter the desired day: ");
+            // int day = int.Parse(Console.ReadLine() ?? "0");
 
-            // Output the result
-            Console.WriteLine("-------------------------------->");
-            Console.WriteLine("Ngay hom qua la: {0:dd/MM/yyyy}", yesterday);
-            Console.WriteLine("Ngay hien tai la: {0:dd/MM/yyyy}", currentDate);
-            Console.WriteLine("Ngay mai la: {0:dd/MM/yyyy}", tomorrow);
-            Console.WriteLine("<--------------------------------");
+            // Console.WriteLine("Enter the desired month: ");
+            // int month = int.Parse(Console.ReadLine() ?? "0");
 
-            Console.ReadKey();
+            // Console.WriteLine("Enter the desired year: ");
+            // int year = int.Parse(Console.ReadLine() ?? "0");
+
+
+            // //Create a DateTime object
+            // DateTime currentDate = new DateTime(year, month, day);
+
+            // //Calculation
+            // DateTime yesterday = currentDate.AddDays(-1);
+            // DateTime tomorrow = currentDate.AddDays(1);
+
+            // // Output the result
+            // Console.WriteLine("-------------------------------->");
+            // Console.WriteLine("Ngay hom qua la: {0:dd/MM/yyyy}", yesterday);
+            // Console.WriteLine("Ngay hien tai la: {0:dd/MM/yyyy}", currentDate);
+            // Console.WriteLine("Ngay mai la: {0:dd/MM/yyyy}", tomorrow);
+            // Console.WriteLine("<--------------------------------");
+
+            // Console.ReadKey();
+
+            // **************************************************************
+            // Bai 3. Cau truc dieu khien
+
+            // //Bai 1
+            // Console.WriteLine("Enter the number: ");
+
+            // // Read the input line
+            // int number = int.Parse(Console.ReadLine() ?? "0");
+
+            // // Output the number
+            // Console.WriteLine($"Number: {number}" );
+
+            // // Output the result
+            // if (number % 3 == 0) Console.WriteLine($"Number {number} is divisible by 3");
+            // else Console.WriteLine($"Number {number} is not divisible by 3");
+
+            // Console.ReadKey();
+            
+            //------------------------------------------------------------------
+
+            // //Bai 2
+            // Console.WriteLine("Enter the number: ");
+
+            // // Read the input line
+            // int number = int.Parse(Console.ReadLine() ?? "0");
+
+            // // Output the number
+            // Console.WriteLine($"Number: {number}" );
+
+            // // Output the result
+            // for(int i = 1; i <= number; i++) {
+            //     for (int j = 1; j <= 10; j++) {
+            //         Console.WriteLine($"{i} x {j} = {i * j}" );
+            //     }
+            //     Console.WriteLine("-------------------");
+            // }
+
+            // Console.ReadKey();
+            
+            //------------------------------------------------------------------
+
+            // // Bai 3
+            // Console.WriteLine("Enter the number: ");
+
+            // // Read the input line
+            // int number = int.Parse(Console.ReadLine() ?? "0");
+
+            // // Output the number
+            // Console.WriteLine($"Number: {number}" );
+
+            // int sum = 0;
+            // // Output the result
+            // for(int i = 1; i <= number; i++) {
+            //     int factorial = 1;
+            //     for (int j = 1; j <= i; j++) {
+            //         factorial *= j;
+            //     }
+            //     sum += factorial;
+            // }
+
+            // // Output the result
+            // Console.WriteLine($"The sum of factorials from 1 to {number}: {sum}");
+
+            // Console.ReadKey();
+            
+            //------------------------------------------------------------------
+
+            // // Bai 4
+            // Console.WriteLine("Enter the number: ");
+
+            // // Read the input line
+            // int number = int.Parse(Console.ReadLine() ?? "0");
+
+            // // Output the number
+            // Console.WriteLine($"Number: {number}" );
+
+            // // Calculate 
+            // double sqrt = Math.Sqrt(number);
+
+            // // Output the result
+            // if (sqrt == (int)sqrt) Console.WriteLine($"Number {number} is square number");
+            // else Console.WriteLine($"Number {number} is not square number");
+
+            // Console.ReadKey();
+            
+            //------------------------------------------------------------------
+            
+            // Bai 5
+            // Console.Write("Enter the month (1-12): ");
+            // int month = int.Parse(Console.ReadLine() ?? "0");
+
+            // //we need the year in case of leap year => February has 29 days
+            // Console.Write("Enter the year: ");
+            // int year = int.Parse(Console.ReadLine() ?? "0");
+
+            // // Get the number of days in the given month and year
+            // int daysInMonth = DateTime.DaysInMonth(year, month);
+
+            // Console.WriteLine($"Month {month} in {year} has {daysInMonth} days.");
+
+            // Console.ReadKey();
+
+            //------------------------------------------------------------------
+            
+            // Bai 6
+            // Console.WriteLine("Enter the number: ");
+
+            // // Read the input line
+            // int number = int.Parse(Console.ReadLine() ?? "0");
+
+            // // Output the number
+            // Console.WriteLine($"Number: {number}" );
+
+            // int sum = 0;
+            // // Output the result
+            // for(int i = 1; i <= number; i++) {
+            //     int factorial = 1;
+            //     for (int j = 1; j <= i; j++) {
+            //         factorial *= j;
+            //     }
+            //     sum += factorial;
+            // }
+
+            // // Output the result
+            // Console.WriteLine($"The sum of factorials from 1 to {number}: {sum}");
+
+            // Console.ReadKey();
+
         }
     }
 }
