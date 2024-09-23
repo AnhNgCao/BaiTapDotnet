@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Cao Nguyen Lan Anh
+// Bai tap buoi 2 va buoi 3
+using System;
 using System.Globalization;
 
 namespace BaiTap2Va3
@@ -182,9 +184,9 @@ namespace BaiTap2Va3
 
             // // Output the result
             // Console.WriteLine("-------------------------------->");
-            // Console.WriteLine("Ngay hom qua la: {0:dd/MM/yyyy}", yesterday);
-            // Console.WriteLine("Ngay hien tai la: {0:dd/MM/yyyy}", currentDate);
-            // Console.WriteLine("Ngay mai la: {0:dd/MM/yyyy}", tomorrow);
+            // Console.WriteLine("Yesterday: {0:dd/MM/yyyy}", yesterday);
+            // Console.WriteLine("Today: {0:dd/MM/yyyy}", currentDate);
+            // Console.WriteLine("Tomorrow: {0:dd/MM/yyyy}", tomorrow);
             // Console.WriteLine("<--------------------------------");
 
             // Console.ReadKey();
@@ -302,21 +304,115 @@ namespace BaiTap2Va3
             // // Output the number
             // Console.WriteLine($"Number: {number}" );
 
-            // int sum = 0;
+            // double sum = 0;
             // // Output the result
             // for(int i = 1; i <= number; i++) {
-            //     int factorial = 1;
-            //     for (int j = 1; j <= i; j++) {
-            //         factorial *= j;
-            //     }
-            //     sum += factorial;
+            //     sum += Math.Pow(i, i);
             // }
 
             // // Output the result
-            // Console.WriteLine($"The sum of factorials from 1 to {number}: {sum}");
+            // Console.WriteLine($"The sum of powers from 1 to {number}: {sum}");
 
             // Console.ReadKey();
 
+            //------------------------------------------------------------------
+
+            // // Bai 7
+            // Console.WriteLine("Enter the number: ");
+
+            // // Read the input line
+            // int number = int.Parse(Console.ReadLine() ?? "0");
+
+            // // Output the number
+            // Console.WriteLine($"Number: {number}" );
+
+            // // Calculation
+            // int sum = 0;
+            // for(int i = 0; i <= number; i++) {
+            //     if (i % 2 != 0) sum+= i;
+            // }
+
+            // // Output the result
+            // Console.WriteLine($"The sum of odd intergers from 1 to {number}: {sum}");
+
+            // Console.ReadKey();
+            
+            //------------------------------------------------------------------
+
+            // // Bai 8
+            // Console.WriteLine("Enter the number: ");
+
+            // // Read the input line
+            // int number = int.Parse(Console.ReadLine() ?? "0");
+
+            // // Output the number
+            // if(number <= 1) {
+            //     Console.WriteLine($"Number {number} is not prime number");
+            //     return;
+            // }
+            // else Console.WriteLine($"Number: {number}" );
+
+            // // Calculation
+            // int count = 0;
+            // for(int i = 1; i <= number; i++) {
+            //     if(number % i == 0) count++;
+            // }
+
+            // // Output the result
+            // if (count == 2) Console.WriteLine($"Number {number} is prime number");
+            // else Console.WriteLine($"Number {number} is not prime number");
+
+            // Console.ReadKey();
+            
+            //------------------------------------------------------------------
+
+            // Bai 9
+            // Console.WriteLine("Enter the number: ");
+
+            // // Read the input line
+            // int number = int.Parse(Console.ReadLine() ?? "0");
+
+            // // Output the number
+            // Console.WriteLine($"Number: {number}" );
+
+            // // Output the result
+            // for (int i = 1; i <= number; i++) {
+            //     for(int j = 1; j <= i; j++) {
+            //         Console.Write("*");
+            //     }
+            //     Console.WriteLine();
+            // }
+
+            // Console.ReadKey();
+            
+            //------------------------------------------------------------------
+
+            // Bai 10
+            Console.Write("Enter an interger: ");
+
+            int number = int.Parse(Console.ReadLine() ?? "0");
+
+            if (number <= 0) {
+                Console.WriteLine("Please enter a positive interger");
+                return;
+            }
+
+            //Output result
+            Console.WriteLine($"The Fibonacci series with {number} elements: ");
+            
+            int a = 0, b = 1;
+
+            for (int i = 0; i < number; i++)
+            {
+                Console.Write(a + " ");
+
+                // Calculate the next Fibonacci number
+                int next = a + b;
+                a = b;
+                b = next;
+            }
+
+            Console.ReadKey();
         }
     }
 }
